@@ -1,5 +1,14 @@
 # UNPCODE
 Este repositório Codespaces fornece um ambiente de desenvolvimento pré-configurado para aulas de programação. Ele inclui todos os softwares e ferramentas necessários para você começar a programar, sem a necessidade de instalar nada em seu computador.  
+## Linguagens disponíveis
+- C
+- C++
+- Java
+- HTML/CSS/Javascript
+- Node.js
+- Javascript (P5.js)
+- Python
+
 ## Instruções do Terminal
 **Programação I**
 Template para as disciplinas de Programação do [Professor Ed](https://edkallenn.github.io/)  do Centro Universitário Unipê de João Pessoa - Paraíba.
