@@ -250,5 +250,31 @@
                     "workbench.startupEditor": "none",
                     "workbench.statusBar.visible": false,
                     "workbench.tips.enabled": false,
-                    "workbench.welcomePage.walkthroughs.openOnInstall": false
+                    "workbench.welcomePage.walkthroughs.openOnInstall": false,
+
+                    "forwardPorts": [
+                        5000, /* Flask */
+                        5900, /* VNC server */
+                        6081, /* VNC client */
+                        8080, /* http-server */
+                        8082, /* phpLiteAdmin */
+                        8787  /* RStudio */
+                    ],
+                    "mounts": [
+                        {
+                            "source": "/var/run/docker.sock",
+                            "target": "/var/run/docker-host.sock", /* https://github.com/devcontainers/features/blob/main/src/docker-outside-of-docker/devcontainer-feature.json */
+                            "type": "bind"
+                        }
+                    ],
+                    "postCreateCommand": "/opt/cs50/bin/postCreateCommand",
+                    "postStartCommand": "/opt/cs50/bin/postStartCommand",
+                    "remoteEnv": {
+                        "UNP_GH_USER": "${localEnv:GITHUB_USER}", /* For lib50 */
+                        "LANG": "${localEnv:CS50_LANG}",
+                        "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}",
+                        "TZ": "${localEnv:CS50_TZ}"
+                    }
+
+                    
         }
