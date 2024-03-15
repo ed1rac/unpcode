@@ -116,7 +116,7 @@ RUN npm install --global @vscode/vsce yarn && \
 
 
 # Final stage
-FROM cs50/cli:${TAG}
+FROM cs50/cli:latest
 
 
 # Unset user
