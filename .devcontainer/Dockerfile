@@ -1,6 +1,9 @@
 ARG TAG
 ARG VARIANT="jammy"
-FROM buildpack-deps:${VARIANT}-curl
+#FROM buildpack-deps:${VARIANT}-curl
+#FROM cs50/codespace:latest
+FROM cs50/codespace:00ae65f484da2691d86ddb8e6bb3b844cbb4686d as builder
+
 
 # Criado e alterado por Edkallenn Lima em 15/03/2024. Se for alterar use sempre o idioma inglês para os comentários, exceto este.
 
@@ -125,9 +128,9 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 
 # Copy files from builder
-COPY --from=builder /build /build
-COPY --from=builder /opt /opt
-COPY --from=builder /usr/local /usr/local
+#COPY --from=builder /build /build
+#COPY --from=builder /opt /opt
+#COPY --from=builder /usr/local /usr/local
 RUN pip3 install --no-cache-dir /opt/cs50/extensions/cs50vsix-client/ && \
     rm --force --recursive /opt/cs50/extensions/cs50vsix-client
 
