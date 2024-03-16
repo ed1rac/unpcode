@@ -181,7 +181,8 @@ RUN echo "\nshopt -q login_shell || exec bash --login -i" >> /etc/bash.bashrc
 
 
 # installs cs50lib
-RUN curl -s https://packagecloud.io/install/repositories/cs50/repo/script.deb.sh | bash \
+RUN curl -s https://packagecloud.io/install/repositories/cs50/repo/script.deb.sh | bash -s \
+    curl -s https://ohmyposh.dev/install.sh | bash -s
     apt install libcs50
 
 
@@ -197,7 +198,7 @@ RUN echo "export GLOBAL_MAKEFILE_PATH=~" >> ~/.bashrc
 
 # instala algumas configuracoes. Basta dar enter no prompt
 RUN touch instala-config-ed.sh \
- && curl https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/instala-config-ed.sh > instala-config-ed.sh \
+ && curl https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/instala-config-codespace.sh > instala-config-ed.sh \
  && chmod +x instala-config-ed.sh \
  && ./instala-config-ed.sh
 
