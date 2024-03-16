@@ -184,7 +184,7 @@ RUN echo "\nshopt -q login_shell || exec bash --login -i" >> /etc/bash.bashrc
 RUN touch instala-config-cs50.sh && \
     curl -s https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/script.deb.sh > instala-config-cs50.sh && \ 
     chmod +x instala-config-cs50.sh && \
-    ./instala-config-cs50.sh.sh && \
+    ./instala-config-cs50.sh && \
     curl -s https://ohmyposh.dev/install.sh | bash -s && \
    apt install libcs50
 
