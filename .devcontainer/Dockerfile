@@ -181,12 +181,12 @@ RUN echo "\nshopt -q login_shell || exec bash --login -i" >> /etc/bash.bashrc
 
 
 # installs cs50lib
-RUN touch instala-config-cs50.sh \
- && curl -s https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/script.deb.sh > instala-config-cs50.sh \
- && chmod +x instala-config-cs50.sh \
- && ./instala-config-cs50.sh.sh \
- && curl -s https://ohmyposh.dev/install.sh | bash -s \
- && apt install libcs50
+RUN touch instala-config-cs50.sh && \
+    curl -s https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/script.deb.sh > instala-config-cs50.sh && \ 
+    chmod +x instala-config-cs50.sh && \
+    ./instala-config-cs50.sh.sh && \
+    curl -s https://ohmyposh.dev/install.sh | bash -s && \
+   apt install libcs50
 
 
 #export some enviroment variables
@@ -200,10 +200,10 @@ RUN echo "export LD_LIBRARY_PATH=/usr/local/lib" >> ~/.bashrc
 RUN echo "export GLOBAL_MAKEFILE_PATH=~" >> ~/.bashrc
 
 # instala algumas configuracoes. Basta dar enter no prompt
-RUN touch instala-config-ed.sh \
- && curl https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/instala-config-codespace.sh > instala-config-ed.sh \
- && chmod +x instala-config-ed.sh \
- && ./instala-config-ed.sh
+RUN touch instala-config-ed.sh && \
+    curl https://raw.githubusercontent.com/ed1rac/FerramentasProgramacao/master/instala-config-codespace.sh > instala-config-ed.sh && \
+    chmod +x instala-config-ed.sh && \
+    ./instala-config-ed.sh
 
 # Set user
 USER ubuntu
