@@ -169,11 +169,11 @@ RUN pip3 install --no-cache-dir \
 
 
 # Copy files to image
-COPY ./etc /etc
-COPY ./opt /opt
-RUN chmod a+rx /opt/cs50/bin/* && \
-    chmod a+rx /opt/cs50/phpliteadmin/bin/phpliteadmin && \
-    ln --symbolic /opt/cs50/phpliteadmin/bin/phpliteadmin /opt/cs50/bin/phpliteadmin
+#COPY ./etc /etc
+#COPY ./opt /opt
+#RUN chmod a+rx /opt/cs50/bin/* && \
+#    chmod a+rx /opt/cs50/phpliteadmin/bin/phpliteadmin && \
+#    ln --symbolic /opt/cs50/phpliteadmin/bin/phpliteadmin /opt/cs50/bin/phpliteadmin
 
 
 # Enforce login shell
