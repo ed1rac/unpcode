@@ -1,13 +1,12 @@
 # 💻 UNPCODE — Ambiente Didático de Programação Multilíngue
 
 <div align="center">
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ed1rac/unpcode)
-[![Multi-Language](https://img.shields.io/badge/Linguagens-C_%7C_C%2B%2B_%7C_Java_%7C_Python_%7C_Node-blue.svg)](https://github.com/ed1rac/unpcode)
-[![Docker](https://img.shields.io/badge/Ambiente-DevContainer_Codespaces-2496ED?logo=docker)](https://github.com/ed1rac/unpcode)
-
-**Ambiente de desenvolvimento na nuvem pré-configurado pelo Prof. Edkallenn para aulas práticas de programação na Unipê.**
-
+  <p>
+    <a href="https://codespaces.new/ed1rac/unpcode"><img src="https://github.com/codespaces/badge.svg" alt="Open in GitHub Codespaces"></a>
+    <a href="https://github.com/ed1rac/unpcode"><img src="https://img.shields.io/badge/Linguagens-C_%7C_C%2B%2B_%7C_Java_%7C_Python_%7C_Node-blue.svg" alt="Multi-Language"></a>
+    <a href="https://github.com/ed1rac/unpcode"><img src="https://img.shields.io/badge/Ambiente-DevContainer_Codespaces-2496ED?logo=docker" alt="Docker"></a>
+  </p>
+  <p><strong>Ambiente de desenvolvimento na nuvem pré-configurado pelo Prof. Edkallenn para aulas práticas de programação na Unipê.</strong></p>
 </div>
 
 ---
