@@ -1,0 +1,5 @@
+theme: jekyll-theme-cayman
+title: "⚡ UNPCODE — Ambiente Didático de Programação Multilíngue"
+description: "Ambiente DevContainer na nuvem para aulas práticas de programação em C, C++, Java e Python."
+kramdown:
+  parse_block_html: true
